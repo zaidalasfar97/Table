@@ -17,16 +17,27 @@
   font-family: "Roboto", sans-serif;
 }
 
+.table {
+  border: 1px solid black;
+}
+
+.th {
+  border: 1px solid;
+}
+
 .thead {
   text-align: left;
   border-bottom: 1.5px rgb(138, 133, 133) solid;
+  text-align: center;
 }
 
 .td,
 .th {
-  border-bottom: 1.5px rgb(138, 133, 133) solid;
+  border: 1.5px rgb(138, 133, 133) solid;
   text-align: left;
   padding: 5px;
+  text-align: center;
+  height: 30px;
 }
 
 .tr {

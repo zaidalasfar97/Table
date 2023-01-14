@@ -57,7 +57,10 @@ export const Table = ({ newData }) => {
             {headerGroups.map((headerGroup) => (
               <tr {...headerGroup.getHeaderGroupProps()}>
                 {headerGroup.headers.map((column) => (
-                  <th {...column.getHeaderProps(column.getSortByToggleProps())}>
+                  <th
+                    className="th"
+                    {...column.getHeaderProps(column.getSortByToggleProps())}
+                  >
                     {column.render("Header")}
                     <span className="icon">
                       {column.isSorted ? (
@@ -79,7 +82,7 @@ export const Table = ({ newData }) => {
             {page.map((row) => {
               prepareRow(row);
               return (
-                <tr {...row.getRowProps()}>
+                <tr c {...row.getRowProps()}>
                   {row.cells.map((cell) => {
                     return (
                       <td className="td" {...cell.getCellProps()}>
