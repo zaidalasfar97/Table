@@ -1,0 +1,77 @@
+.divCon {
+  padding-left: 20px;
+  width: 100%;
+}
+.input {
+  margin-top: 8px;
+  border-radius: 7px;
+  height: 25px;
+  width: 200px;
+}
+.table {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  /* box-shadow: 20px; */
+  border-collapse: collapse;
+  font-family: "Roboto", sans-serif;
+}
+
+.thead {
+  text-align: left;
+  border-bottom: 1.5px rgb(138, 133, 133) solid;
+}
+
+.td,
+.th {
+  border-bottom: 1.5px rgb(138, 133, 133) solid;
+  text-align: left;
+  padding: 5px;
+}
+
+.tr {
+  padding: 5px;
+  border: 2px, 2px, 2px, 2px;
+}
+
+.thSearch {
+  width: 20%;
+  padding-top: 20px;
+  padding-right: 15px;
+  padding-top: 10px;
+  text-align: left;
+}
+
+.footerDiv {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  font-weight: 400;
+  border: 1px solid transparent;
+  border: none;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 10px;
+  margin: 5px;
+  background-color: #6eadec;
+}
+
+.disabledButton {
+  font-weight: 400;
+  border: 1px solid transparent;
+  border: none;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 10px;
+  margin: 5px;
+  background-color: #9d9393;
+}
+.icon {
+  padding-left: 15px;
+}
