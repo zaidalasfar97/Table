@@ -1,15 +1,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useMemo } from "react";
 
-import {
-  useTable,
-  useSortBy,
-  useGlobalFilter,
-  useFilters,
-  usePagination,
-} from "react-table";
+import { useTable, useSortBy, useFilters, usePagination } from "react-table";
 import { COLUMNS } from "./data";
-import { GlobalFilter } from "./GlobalFilter";
 import "./styles.css";
 import { BsFillArrowDownCircleFill } from "react-icons/bs";
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
@@ -31,19 +24,17 @@ export const Table = ({ newData }) => {
     pageCount,
     prepareRow,
     state,
-    setGlobalFilter,
   } = useTable(
     {
       columns,
       data,
     },
     useFilters,
-    useGlobalFilter,
     useSortBy,
     usePagination
   );
 
-  const { pageIndex, globalFilter } = state;
+  const { pageIndex } = state;
 
   return (
     <div className="divCon">
@@ -60,7 +51,6 @@ export const Table = ({ newData }) => {
         ))}
       </div>
 
-      <GlobalFilter filter={globalFilter} setFilter={setGlobalFilter} />
       <div>
         <table className="table" {...getTableProps()}>
           <thead className="thead">
